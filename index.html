@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example - example-example109-production</title>
+  
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular.min.js"></script>
+    <script src="count.js"></script>
+
+  
+</head>
+<body ng-app="intervalExample">
+
+
+<div>
+  <div ng-controller="timeCtrl">
+  	<button ng-click="start()">start</button> <label>{{currTimer}}</label><br>
+  	<button ng-disabled="isDisabled" ng-click="currCounter=currCounter+1">increase</button>{{currCounter}}<br>
+  	<ul>
+  		<li ng-repeat="item in counterList">
+  			日期：{{item.time | date:'yyyy-MM-dd HH:mm'}} 胎动：{{item.count}}
+  		</li>
+  	</ul>
+  </div>
+</div>
+</body>
+</html>

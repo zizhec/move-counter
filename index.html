@@ -15,8 +15,10 @@
 
 <div>
   <div ng-controller="timeCtrl">
-  	<button ng-click="start()">start</button> <label>{{currTimer}}</label><br>
-  	<button ng-disabled="isDisabled" ng-click="currCounter=currCounter+1">increase</button>{{currCounter}}<br>
+  	<button ng-click="start()">记时开始</button> <label>剩余{{currTimer}}秒</label><br><br>
+  	<button ng-disabled="isDisabled" ng-click="currCounter=currCounter+1">胎动</button>{{currCounter}}次
+  	<br>--------------------------------------------------------------------------------------------------<br>
+  	<br>报告单<br>
   	<ul>
   		<li ng-repeat="item in counterList">
   			日期：{{item.time | date:'yyyy-MM-dd HH:mm'}} 胎动：{{item.count}}

@@ -6,7 +6,7 @@
  		$scope.currCounter = 0;
  		$scope.counterList = [];
  		$scope.isDisabled = true;
- 		var timerMax = 2;
+ 		var timerMax = 60 * 10;
  		$scope.currTimer = timerMax;
 
  		$scope.start = function() {
